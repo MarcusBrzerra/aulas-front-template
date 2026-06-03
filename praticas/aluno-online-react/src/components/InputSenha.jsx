@@ -1,13 +1,13 @@
-import './InputEmail.css'
+import "tailwindcss";
 
-function InputEmail({ label, value, onChange, error, placeholder = 'Digite seu e-mail' }) {
+function InputSenha({ label, value, onChange, error, placeholder = 'Digite seu e-mail' }) {
   return (
     <fieldset className="input-group">
-      <label htmlFor="email">{label}</label>
+      <label htmlFor="senha">{label}</label>
       <input
-        type="email"
-        id="email"
-        name="email"
+        type="senha"
+        id="senha"
+        name="senha"
         value={value}
         onChange={onChange}
         placeholder={placeholder}
@@ -18,4 +18,4 @@ function InputEmail({ label, value, onChange, error, placeholder = 'Digite seu e
   )
 }
 
-export default InputEmail;
+export default InputSenha;
